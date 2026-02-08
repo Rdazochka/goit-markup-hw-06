@@ -16,3 +16,20 @@
     refs.modal.classList.toggle('is-open');
   }
 })();
+
+(() => {
+  const refs = {
+    openBtn: document.querySelector('[data-mobile-open]'),
+    closeBtn: document.querySelector('[data-mobile-close]'),
+    menu: document.querySelector('[data-mobile-menu]'),
+  };
+
+  if (!refs.openBtn || !refs.closeBtn || !refs.menu) return;
+
+  refs.openBtn.addEventListener('click', toggleMenu);
+  refs.closeBtn.addEventListener('click', toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle('is-open');
+  }
+})();

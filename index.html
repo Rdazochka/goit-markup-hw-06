@@ -28,7 +28,7 @@
           <span class="logo-web">Web</span>
           <span class="logo-studio">Studio</span>
         </a>
-        <nav class="nav">
+        <!-- <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link current">Studio</a>
@@ -36,21 +36,30 @@
             <li class="nav-item">
               <a href="" class="nav-link">Portfolio</a>
             </li>
-            <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="address">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </address>
-        <button class="header-button">
+          <ul class="address-list">
+            <li class="adress-item">
+              <a class="adress-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="adress-item">
+              <a class="adress-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address> -->
+        <button class="header-button" data-mobile-open>
           <svg class="header-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
-        <div class="mobile-menu">
-          <div class="mobile-menu-container"></div>
-        </div>
       </div>
     </header>
     <!-- #endregion header -->
@@ -59,7 +68,9 @@
       <section class="solutions">
         <div class="container">
           <h1>Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion solutions -->
@@ -523,9 +534,9 @@
     </footer>
     <!-- #endregion footer -->
     <!-- #region modal -->
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -600,5 +611,79 @@
     </div>
 
     <!-- #endregion modal -->
+    <!-- #region mobile-menu  -->
+    <div class="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu-container">
+        <button class="mobile-close-btn" data-mobile-close>
+          <svg class="mobile-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-navig">
+          <ul class="mobile-menu-navig-list">
+            <li class="mobile-menu-navig-item">
+              <a class="mobile-menu-navig-link current" href="#">Studio</a>
+            </li>
+            <li class="mobile-menu-navig-item">
+              <a class="mobile-menu-navig-link" href="#">Portfolio</a>
+            </li>
+            <li class="mobile-menu-navig-item">
+              <a class="mobile-menu-navig-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-adr-item">
+              <a class="mobile-menu-adr-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-adr-item">
+              <a class="mobile-menu-adr-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="icon-socialmedia" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="icon-socialmedia" width="16" height="16">
+                <use href="./images/icons.svg#icon-twiter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="icon-socialmedia" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <svg class="icon-socialmedia" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- #endregion mobile-menu -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
