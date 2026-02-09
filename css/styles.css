@@ -388,3 +388,40 @@ button {
   fill: #ffffff;
 }
 /* #endregion nav-mobile */
+/* #region solutions */
+.solutions {
+  background-color: #2e2f42;
+  background-image:
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 72px 0;
+  max-width: 1440px;
+}
+
+.solutions .container {
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+h1 span {
+  display: block;
+}
+
+.solutions h1 {
+  max-width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #endregion solutions */
