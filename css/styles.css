@@ -738,6 +738,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    row-gap: 64px;
   }
 
   .our-team-item {
@@ -915,6 +916,121 @@ p {
 }
 
 /* #endregion our-portfolio */
+
+/* #region footer */
+
+.footer {
+  padding: 96px 0;
+  background-color: #2e2f42;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.logo-footer-all {
+  text-align: center;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+
+.logo-footer .logo-footer-web {
+  color: #4d5ae5;
+}
+
+.logo-footer .logo-footer-studio {
+  color: #f4f4fd;
+}
+
+.logo-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin-top: 16px;
+  text-align: start;
+}
+
+.socialmedia-footer p,
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-input {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+  border-color: #31d0aa;
+}
+
+.footer-input::placeholder {
+  color: #ffffff;
+}
+
+.footer-button {
+  height: 40px;
+  padding: 8px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #31d0aa;
+}
+
+.input-icon-footer {
+  fill: #ffffff;
+}
+
+/* #endregion footer */
 
 /* #region modal-mobile */
 .modal-overlay {
