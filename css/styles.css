@@ -492,7 +492,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .solutions {
-    padding-top: 112px;
+    padding: 112px 0;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/tablet-img/solution-tabl.png);
@@ -514,7 +514,7 @@ h1 {
 
 @media screen and (min-width: 1158px) {
   .solutions {
-    padding-top: 188px;
+    padding: 188px 0;
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office.jpg);
@@ -932,6 +932,11 @@ p {
 }
 
 @media screen and (min-width: 1158px) {
+  
+  .our-portfolio {
+  padding: 120px 0;
+}
+  
   .portfolio-list {
     display: flex;
     row-gap: 48px;
@@ -1109,6 +1114,10 @@ p {
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+  padding: 100px 0;
+}
+  
   .footer .container {
     width: 1158px;
     display: flex;
