@@ -222,7 +222,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: 2e2F42;
+    color: #2e2f42;
   }
   .nav-link.current {
     color: #404bbf;
@@ -447,7 +447,7 @@ h1 {
 }
 
 @media (min-resolution: 2x) {
-  .hero {
+  .solutions {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/mobile-img/solution@2x.png');
@@ -564,19 +564,6 @@ p {
 
   .our-features li {
     width: 264px;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
   }
 
   .our-features h3 {
