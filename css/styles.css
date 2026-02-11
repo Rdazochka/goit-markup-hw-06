@@ -422,6 +422,7 @@ img {
 .mobile-menu-social-list {
   display: flex;
   gap: 40px;
+  margin-top: 48px;
 }
 
 .mobile-icon-socialmedia {
